@@ -35,7 +35,7 @@ export default function Hero(): JSX.Element {
             'break-words font-extrabold tracking-tight'
           )}
         >
-          I specialize in both building <HighlightText>iOS Applications</HighlightText> for{' '}
+          I specialize in building <HighlightText>iOS Applications</HighlightText> for{' '}
           <HighlightText>growing companies</HighlightText> like{' '}
           <HighlightText>yours</HighlightText>.
         </h1>
@@ -47,7 +47,7 @@ export default function Hero(): JSX.Element {
             'pb-0'
           )}
         >
-          Mobile Engineering Manager and iOS Developer at <InlineLink href='https://hyrecar.com?refr_source=jstngoulet@me.com&campaign=portfolio&channel=web'>HyreCar by Getaround</InlineLink>
+          Mobile Engineering Manager and Sr. iOS Developer at <InlineLink href='https://hyrecar.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&channel=web'>HyreCar by Getaround</InlineLink>
         </p>
         <SocialMediaLinks className={clsx('animate-fade-in !delay-500', 'mt-6')} />
       </div>

@@ -9,10 +9,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: colors.blue['300'],
+          /*
+          light: colors.blue['300'], // Hyperlink color
           lighter: colors.blue['200'],
           dark: colors.indigo['600'],
           'lighter-dark': colors.indigo['500']
+          */
+         light: colors.red['400'],
+         lighter: colors.red['300'],
+         dark: colors.red['700'],
+         'lighter-dark': colors.red['600']
         },
         muted: {
           DEFAULT: colors.slate['300'],

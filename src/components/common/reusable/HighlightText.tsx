@@ -19,11 +19,18 @@ export default function HighlightText({ children }: ComponentProps): JSX.Element
   return (
     <span
       ref={ref}
-      className={clsx(
-        'from-fuchsia-700 to-indigo-700 bg-clip-text',
-        'dark:from-fuchsia-400 dark:to-blue-400',
-        'text-transparent transition'
-      )}
+      // className={clsx(
+      //   'from-fuchsia-700 to-indigo-700 bg-clip-text',
+      //   'dark:from-fuchsia-400 dark:to-blue-400',
+      //   'text-transparent transition'
+      // )}
+      className={
+        clsx(
+          'from-slate-700 to-red-700 bg-clip-text',
+          'dark:from-white dark:to-red-400',
+          'text-transparent transition'
+        )
+      }
     >
       {children}
     </span>

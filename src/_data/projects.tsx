@@ -1,5 +1,6 @@
 // import GitlabFillIcon from 'remixicon-react/GitlabFillIcon'
 import GitlabFillIcon from 'remixicon-react/GitlabFillIcon'
+import GithubFillIcon from 'remixicon-react/GithubFillIcon'
 import ExternalLinkFillIcon from 'remixicon-react/ExternalLinkFillIcon'
 import ApplelineIcon from 'remixicon-react/AppleLineIcon'
 import GooglePlayLineIcon from 'remixicon-react/GooglePlayLineIcon'
@@ -45,7 +46,6 @@ const filters: string[] = [
     , 'Instabug'
     , 'Cocoapods'
     , 'Swift Package Manager'
-    , 'Objective-C'
 ]
 
 const projects: ProjectProps[] = [
@@ -55,16 +55,23 @@ const projects: ProjectProps[] = [
     title: 'HyreCar by Getaround',
     description: (
       <span>
-      <p>
-       Carsharing marketplace for drivers in the Gig Economy. WAs brought on as sole iOS developer in 2018 and maintained it 
-       until 2024 with larger team that I led.
-       </p>
-       <p>
-       <InlineLink href='#'>Learn More</InlineLink>
-      </p>
+        <p>
+          HyreCar is a "RideShare for GigShare" application that allows users of lower income or bad credit
+          rent the vehicles of their peers in a simple to use marketplace.
+        </p>
+        <p>
+          I was brouht into HyreCar in 2018 with the task of building their iOS application from scratch and 
+          scaling it to support all of their users. We were able to release it on schedule and with added
+          features, starting the true shift of mobility for a mobility platform.
+        </p>
+        <p>
+          I managed this project between 2018 and the end of 2024, adding many of the well known features 
+          like authentication/phone verification, their vetting process using document OCR and rental management while 
+          also spearheading the product analytics integration for all clients (iOS, Android and Web).
+        </p>
       </span>
     ),
-    techStacks: ['Swift', 'Fastlane CI', 'Snowplow'],
+    techStacks: ['Swift', 'Fastlane CI', 'Snowplow', 'Swift UI'],
     otherTechStacks: [
       'Sendbird'
     , 'Firebase'
@@ -94,17 +101,17 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "hyrecar-web",
-        url: "https://hyrecar.com?refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://hyrecar.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ExternalLinkFillIcon size={22} />
       },
       {
         label: "hyrecar-ios",
-        url: "https://apps.apple.com/us/app/hyrecar-driver-gig-rentals/id1440817663?refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://apps.apple.com/us/app/hyrecar-driver-gig-rentals/id1440817663?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       },
       {
         label: "hyrecar-android",
-        url: "https://play.google.com/store/apps/details?id=com.yellowishdev.hyrecarandroid&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://play.google.com/store/apps/details?id=com.yellowishdev.hyrecarandroid&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <GooglePlayLineIcon size={22} />
       }
     ]
@@ -124,9 +131,6 @@ const projects: ProjectProps[] = [
         With a social feed, users can communicate directly with their followers to know what breweries 
         they like to visit and what beers they are into.
         </p>
-       <p>
-       <InlineLink href='#'>Learn More</InlineLink>
-      </p>
       </span>
     ),
     category: 'Food & Drink',
@@ -172,12 +176,12 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "othermind-web",
-        url: "https://www.othermind.com?refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://www.othermind.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ExternalLinkFillIcon size={22} />
       },
       {
         label: "othermind-ios",
-        url: "https://itunes.apple.com/us/app/8/id1321747249?ls=1&mt=8&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://itunes.apple.com/us/app/8/id1321747249?ls=1&mt=8&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -203,7 +207,7 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "crowdsorz-ios",
-        url: "https://itunes.apple.com/us/app/crowdsorz/id1149315899?ls=1&mt=8&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://itunes.apple.com/us/app/crowdsorz/id1149315899?ls=1&mt=8&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -230,17 +234,17 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "bankroll-web",
-        url: "https://guacapp.com?refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://guacapp.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ExternalLinkFillIcon size={22} />
       },
       {
         label: "bankroll-ios",
-        url: "https://apps.apple.com/us/app/guac-save-while-you-spend/id1463903144?refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://apps.apple.com/us/app/guac-save-while-you-spend/id1463903144?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       },
       {
         label: "bankroll-android",
-        url: "https://play.google.com/store/apps/details?id=com.guac&hl=en_US&gl=US&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://play.google.com/store/apps/details?id=com.guac&hl=en_US&gl=US&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <GooglePlayLineIcon size={22} />
       }
     ]
@@ -271,7 +275,7 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "tending-ios",
-        url: "https://itunes.apple.com/us/app/tending/id1188208027?ls=1&mt=8&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://itunes.apple.com/us/app/tending/id1188208027?ls=1&mt=8&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -298,7 +302,7 @@ const projects: ProjectProps[] = [
     links: [
       {
         label: "yurparty-ios",
-        url: "https://itunes.apple.com/us/app/yurparty/id1301502988?ls=1&mt=8&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        url: "https://itunes.apple.com/us/app/yurparty/id1301502988?ls=1&mt=8&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -326,8 +330,8 @@ const projects: ProjectProps[] = [
     techStacks: ['Swift', 'CoreData', 'REST'],
     links: [
       {
-        label: "yurparty-ios",
-        url: "https://itunes.apple.com/us/app/referaway/id1095691498?ls=1&mt=8&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        label: "referaway-ios",
+        url: "https://itunes.apple.com/us/app/referaway/id1095691498?ls=1&mt=8&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -356,8 +360,8 @@ const projects: ProjectProps[] = [
     techStacks: ['Objective-C', 'Airtable', 'REST'],
     links: [
       {
-        label: "yurparty-ios",
-        url: "https://itunes.apple.com/us/app/beer-hopper/id1073181416?mt=8&ign-mpt=uo%3D4&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        label: "beer-hopper-ios",
+        url: "https://itunes.apple.com/us/app/beer-hopper/id1073181416?mt=8&ign-mpt=uo%3D4&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -386,8 +390,8 @@ const projects: ProjectProps[] = [
     techStacks: ['Objective-C', 'Yelp API', 'Sendbird'],
     links: [
       {
-        label: "yurparty-ios",
-        url: "https://itunes.apple.com/us/app/crony/id999180611?mt=8&ign-mpt=uo%3D4&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        label: "crony-ios",
+        url: "https://itunes.apple.com/us/app/crony/id999180611?mt=8&ign-mpt=uo%3D4&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -414,8 +418,8 @@ const projects: ProjectProps[] = [
     techStacks: ['Objective-C', 'GameCenter'],
     links: [
       {
-        label: "yurparty-ios",
-        url: "https://itunes.apple.com/us/app/krash-kourse-2/id968211755?mt=8&ign-mpt=uo%3D4&refr_source=jstngoulet@me.com&campaign=portfolio&refr_medium=web",
+        label: "krash-kourse-2-ios",
+        url: "https://itunes.apple.com/us/app/krash-kourse-2/id968211755?mt=8&ign-mpt=uo%3D4&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
         icon: <ApplelineIcon size={22} />
       }
     ]
@@ -424,37 +428,172 @@ const projects: ProjectProps[] = [
     slug: "word-games",
     featured: false,
     title: 'Word Games',
-    description: '',
+    description: (
+      <span>
+        <p>
+          This was a fun game to make as I love word games. The object of the game was simple: unscramble the letters 
+          from the top and place them into the corect position at the bottom of the screen.
+        </p>
+        <p>
+          The words range from 3 letter words to 5 letter words, each given a particular level of difficulty. 
+          On easy, you start off with every letter given to you for the 3 letter words. Your job is simply to find 
+          them and place them in the correct square below. On medium, you are only provided a random amount of letters 
+          and you have to figure out where they go. This level is also slightly tougher due to the word length starting at 
+          4 (instead of three). Finally, you have hard, which starts you off at five letter words, without any hints.
+        </p>
+      </span>
+    ),
     category: 'Games',
-    techStacks: [],
-    links: []
+    techStacks: ['Objective-C', 'GameCenter'],
+    links: [
+      {
+        label: "word-games-ios",
+        url: "https://itunes.apple.com/us/app/word-games/id898017804?mt=8&ign-mpt=uo%3D4&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ApplelineIcon size={22} />
+      }
+    ]
   },
   {
     slug: "that-game",
     featured: false,
     title: 'That Game',
-    description: '',
+    description: (
+      <span>
+        <p>
+          Though the title is not that creative, this game tought me how to handle touch-and-drag events. 
+          The object of the game is simple - catch all of the falling eggs by moving your tree knots up and down 
+          (which move the nests used to catch the eggs). You keep playing until you either miss one (and it goes 
+          below the screen) or you collect a bomb.
+        </p>
+        <p>
+          In the store, you can modify your game by increasing/decreasing the speed of which the eggs fall, the 
+          amout of lives you have, and even add a basket to the bottom of the screen that will catch any missed eggs 
+          you couldn't catch up to.
+        </p>
+      </span>
+    ),
     category: 'Games',
-    techStacks: [],
-    links: []
+    techStacks: ['Objective-C', 'GameCenter', 'REST'],
+    links: [
+      {
+        label: "that-game-ios",
+        url: "https://itunes.apple.com/us/app/that-game/id959433718?mt=8&ign-mpt=uo%3D4&refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ApplelineIcon size={22} />
+      }
+    ]
+  },
+  {
+    slug: "Portfolio",
+    featured: true,
+    title: 'Project Portfolio',
+    description: (
+      <span>
+        <p>
+          My original project portfolio, hosted on Digital Ocean and written in raw HTML/CSS and JS. 
+        </p>
+        <p>
+          This project was geared at learning the fundamentals of Web development and how I can create 
+          my own personal website from scratch, without any libraries that are now commonplace.  
+        </p>
+        <p>
+          This site has similar project descriptions as shown here, however, is a little older in terms of content.
+        </p>
+        <p>
+          The addition, however, is that there are images for each of the projects noted on this page, a feature
+          I plan on bringing to this site in the near future.
+        </p>
+      </span>
+    ),
+    category: 'Productivity',
+    techStacks: ['HTML', 'CSS', 'Javascript'],
+    links: [
+      {
+        label: "original-portfolio-web",
+        url: "http://JTizz.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ExternalLinkFillIcon size={22} />
+      }
+    ]
   },
   {
     slug: "Beer Hopper",
     featured: false,
     title: 'Beer Hopper (Web)',
-    description: '',
+    description: (
+      <span>
+        <p>
+          Using the <InlineLink href='http://beerhopper.me'>Beer Hopper</InlineLink> app I created, the purpose of this website was to 
+          introduce a more social experience than what was currently being offered.
+        </p>
+        <p>
+          In a team of 5 people, we were able to transform an application into a functional website. As this project was a school project, 
+          we were able to learn PHP, HTML, CSS, and JavaScript on the way.
+        </p>
+        <p>
+          The goal of the school project was to create a functional website using MySQL and allowed users to interact with the page content. 
+          This meant that we had to develop a backend system that was scalable and able to handle content as normal users would.
+        </p>
+        <p>
+          From project documentation, ERDs for the Database Implementation, wireframing and actual implementation, we spent countless 
+          hours ensuring we had the best project in the class. Using <InlineLink href='http://github.com/'>GitHub</InlineLink> 
+          as our version control system, our repository is publically viewable <InlineLink href='http://github.com/CSUSM-Web-Dev-F2016/f2016-Sem_Project'>here</InlineLink>.
+        </p>
+      </span>
+    ),
     category: 'Social Network',
     techStacks: ['HTML', 'CSS', 'Javascript', 'MySQL', 'PHP'],
-    links: []
+    links: [
+      {
+        label: "beer-hopper-web",
+        url: "http://beerhopper.me?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ExternalLinkFillIcon size={22} />
+      },
+      {
+        label: "beer-hopper-web-git",
+        url: "http://github.com/CSUSM-Web-Dev-F2016/f2016-Sem_Project?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <GithubFillIcon size={22} />
+      },
+      {
+        label: "beer-hopper-web-beta",
+        url: "http://beta.beerhopper.me?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ExternalLinkFillIcon size={22} />
+      }
+    ]
   },
   {
     slug: "nand-2-tetris",
     featured: true,
     title: 'Nand2Tetris',
-    description: '',
-    category: '',
+    description: (
+      <span>
+        <p>
+          Starting with a NAND chip and VHDL as our language, the goal of this class was to learn how the structure of 
+          the computer was built from just above the transisitors to the operating system and the application that it runs.
+        </p>
+        <p>
+          The course was based off of an online course, found <InlineLink href='http://nand2tetris.org?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web'>
+          here</InlineLink> and consisted of week-long portions. For example, we had one week to create the codes for
+           all of our elementary gates, a week for the advanced gates, a week for the ALU, and so on.
+        </p>
+        <p>
+          Due to the complexity of some systems, however, we were allowed 2 weeks for some projects including the Virtual 
+          Machine and the Operating System.
+        </p>
+        <p>
+          Each project, above the VHDL, was written in Java to support a C like language known as Jack. Since many Operating 
+          Systems are built with a popular 3rd level language, this allowed us to understand how the computer is fundamentaly 
+          working under the hood. The virtual computer we eventualluy built was able to run one of our final projects - a program 
+          written completely in Jack.
+        </p>
+      </span>
+    ),
+    category: 'Education',
     techStacks: ['VHDL', 'Java', 'Assembly'],
-    links: []
+    links: [
+      {
+        label: "nand2tetris-web",
+        url: "http://nand2tetris.org?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web",
+        icon: <ExternalLinkFillIcon size={22} />
+      }]
   }
 ]
 
