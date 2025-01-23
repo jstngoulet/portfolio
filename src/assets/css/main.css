@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Nunito Sans', system-ui, sans-serif;
+  }
+
+  p {
+    padding-bottom: theme(spacing.6);
+  }
+
+  span,
+  i {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  a:hover svg {
+    transition-duration: theme(transitionDuration.300);
+    fill: theme(colors.primary.dark);
+  }
+
+  html.dark a:hover svg {
+    fill: theme(colors.primary.light);
+  }
+
+  .preloader > svg {
+    stroke: theme(colors.fuchsia.700);
+  }
+
+  .dark .preloader > svg {
+    stroke: theme(colors.fuchsia.400);
+  }
+
+  @media (min-width: theme(screens.sm)) {
+    li,
+    i,
+    p,
+    button {
+      line-height: theme(lineHeight.7);
+    }
+  }
+}
+
+@layer utilities {
+  .bg-light {
+    background: linear-gradient(-135deg, #cdc6ff 10%, #c6c9ff 50%, #e2f5ff 100%);
+  }
+
+  .bg-overlay {
+    background: linear-gradient(30deg, #c5d1ffe6 33%, #c5d1ff00 66%),
+      linear-gradient(-135deg, #c4bdff 10%, #c6c9ff 50%, #e2f5ff 100%);
+    background-attachment: fixed;
+  }
+
+  .bg-dark {
+    background: linear-gradient(-135deg, #3a1529 20%, #281543 50%, #110627 100%);
+  }
+
+  .bg-overlay-dark {
+    background: linear-gradient(30deg, #110627e6 10%, #11062700 66%),
+      linear-gradient(-135deg, #3a1529 20%, #281543 50%, #00137a 100%);
+    background-attachment: fixed;
+  }
+
+  .cursor-tracking-gradient {
+    --gradientPosition: center;
+    --background: 215 225 255;
+    background: radial-gradient(
+      400px at var(--gradientPosition),
+      rgb(var(--background) / 0.4) 0%,
+      rgb(var(--background) / 0.2) 40%,
+      transparent 100%
+    );
+  }
+
+  html.dark .cursor-tracking-gradient {
+    --background: 0 19 122;
+  }
+
+  .animate-fade-in {
+    transition: all 500ms ease-out;
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  .animate-start .animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

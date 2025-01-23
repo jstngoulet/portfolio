@@ -1,0 +1,30 @@
+{
+  "name": "About Justin Goulet",
+  "short_name": "About Justin Goulet",
+  "description": "Justin Goulet is an iOS Engineer and Engineering Manager from San Diego, California. Visit his site to learn more!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#110627",
+  "orientation": "portrait"
+}
