@@ -26,5 +26,10 @@
     },
     "typeRoots": ["node_modules/@types", "d.ts"]
   },
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "src/", 
+    "environment.d.ts", 
+    "env"
+  ]
 }

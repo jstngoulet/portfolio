@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "dotenv": "^16.4.7",
     "firebase": "^11.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,10 +21,12 @@
     "react-markdown": "^8.0.7",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
-    "remixicon-react": "^1.0.0"
+    "remixicon-react": "^1.0.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@netlify/functions": "^2.7.0",
+    "@types/node": "^22.10.10",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@types/react-helmet": "^6.1.6",

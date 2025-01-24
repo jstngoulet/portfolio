@@ -117,7 +117,7 @@ const projects: ProjectProps[] = [
     ]
   },
   {
-    slug: "beerhopper",
+    slug: "beer-hopper-2",
     featured: true,
     title: 'Beer Hopper',
     description: (
@@ -483,7 +483,7 @@ const projects: ProjectProps[] = [
     ]
   },
   {
-    slug: "Portfolio",
+    slug: "portfolio",
     featured: true,
     title: 'Project Portfolio',
     description: (
@@ -515,7 +515,7 @@ const projects: ProjectProps[] = [
     ]
   },
   {
-    slug: "Beer Hopper",
+    slug: "beer-hopper-web",
     featured: false,
     title: 'Beer Hopper (Web)',
     description: (
