@@ -9,13 +9,13 @@ const ScrollToTop = lazy(() => import('@/components/common/ScrollToTop'))
 const ScrollToTopFAB = lazy(() => import('@/components/common/ScrollToTopFAB'))
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB59OMhL-7cUxlA3-_ZH2eX3UCNYWNYsg4",
-  authDomain: "tizzle-portfolio.firebaseapp.com",
-  projectId: "tizzle-portfolio",
-  storageBucket: "tizzle-portfolio.firebasestorage.app",
-  messagingSenderId: "93800741164",
-  appId: "1:93800741164:web:9fc1caeea5762339a99489",
-  measurementId: "G-RV6S9FQZVL"
+  apiKey: process.env.GOOGLE_API_KEY,
+  authDomain: process.env.GOOGLE_AUTH_DOMAIN,
+  projectId: process.env.GOOGLE_PROJECT_ID,
+  storageBucket: process.env.GOOGLE_STORAGE_BUCKET,
+  messagingSenderId: process.env.GOOGLE_SENDER_ID,
+  appId: process.env.GOOGLE_APP_ID,
+  measurementId: process.env.GOOGLE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
