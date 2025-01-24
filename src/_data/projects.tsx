@@ -6,13 +6,6 @@ import ApplelineIcon from 'remixicon-react/AppleLineIcon'
 import GooglePlayLineIcon from 'remixicon-react/GooglePlayLineIcon'
 import InlineLink from '@/components/common/reusable/InlineLink'
 import ProjectProps from '@/types/components/ProjectProps'
-import LinkProps from '@/types/LinkProps'
-import getGitHubUrl from '@/utils/getGitHubUrl'
-
-const live: LinkProps = {
-  label: 'Live',
-  icon: <ExternalLinkFillIcon size={22} />
-}
 
 const filters: string[] = [
     'Swift'

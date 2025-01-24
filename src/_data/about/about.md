@@ -115,10 +115,12 @@ Here are some technologies that I am familiar with:
 - [Snowplow](https://snowplow.io)
 - [Segment](https://segment.com)
 - [Amazon Redshift](https://aws.amazon.com/redshift/)
+- [Adjust MMP](https://www.adjust.com)
 
 ### Ideologies / Architectures
 
 - [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel)
+- [MVC](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html)
 - [VIPER](https://medium.com/@pinarkocak/understanding-viper-pattern-619fa9a0b1f1)
 - [Domain Driven Design](https://domaindrivendesign.org)
 - [Event Driven Design](https://en.wikipedia.org/wiki/Event-driven_programming)
