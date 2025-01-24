@@ -131,7 +131,7 @@ Here are some technologies that I am familiar with:
 - [Command Query Responsibility Segregation (CQRS)](https://en.wikipedia.org/wiki/Command_Query_Responsibility_Segregation)
 - [Agile SCRUM](https://www.scrum.org)
 - [Agile KANBAN](https://en.wikipedia.org/wiki/Kanban)
-- [EDGE]()
+- [EDGE](https://www.thoughtworks.com/insights/books/edge)
 
 ### Education
 
