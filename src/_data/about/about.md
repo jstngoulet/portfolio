@@ -85,6 +85,7 @@ Here are some technologies that I am familiar with:
 - [Plaid](https://plaid.com)
 - [Realm (Now Atlas)](https://www.mongodb.com/docs/atlas/device-sdks/)
 - [Algolia](https://www.algolia.com)
+- [Adjust MMP](https://www.adjust.com)
 
 ### Software
 
