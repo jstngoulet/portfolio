@@ -19,5 +19,6 @@ export default defineConfig({
       }
     }
   },
-  assetsInclude: ['**/*.md']
+  assetsInclude: ['**/*.md'],
+  define: { 'process.env': 'import.meta.env' }
 })

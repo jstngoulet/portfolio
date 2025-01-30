@@ -90,7 +90,7 @@ const projects: ProjectProps[] = [
     , 'Cocoapods'
     , 'Swift Package Manager'
   ],
-    category: 'iOS Development',
+    category: 'Marketplace',
     links: [
       {
         label: "hyrecar-web",
@@ -157,7 +157,7 @@ const projects: ProjectProps[] = [
         </p>
       </span>
     ),
-    category: 'Chat',
+    category: 'Social Network',
     techStacks: [
       'Watson AI'
       , 'Uber API'
@@ -224,6 +224,7 @@ const projects: ProjectProps[] = [
     ),
     category: 'Finance',
     techStacks: ['Swift', 'REST', 'Plaid'],
+    otherTechStacks: ['Finance'],
     links: [
       {
         label: "bankroll-web",
