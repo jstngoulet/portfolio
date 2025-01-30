@@ -29,11 +29,11 @@
   }
 
   .preloader>svg {
-    stroke: theme(colors.fuchsia.700);
+    stroke: theme(colors.primary.light);
   }
 
   .dark .preloader>svg {
-    stroke: theme(colors.fuchsia.400);
+    stroke: theme(colors.primary.dark);
   }
 
   @media (min-width: theme(screens.sm)) {
