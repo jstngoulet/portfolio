@@ -12,6 +12,11 @@ const navItems: NavItemsProps[] = [
     isNew: false
   },
   {
+    name: 'Recommendations',
+    href: '/recommendations',
+    isNew: true
+  },
+  {
     name: 'About',
     href: '/about',
     isNew: false

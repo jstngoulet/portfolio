@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import HomePage from '@/pages/HomePage'
-import BlogPage from '@/pages/BlogPage'
 import AboutPage from '@/pages/AboutPage'
 import ProjectPage from '@/pages/ProjectPage'
+import RecommendationPage from './pages/RecommendationPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 export default function Router(): JSX.Element {
@@ -12,9 +12,9 @@ export default function Router(): JSX.Element {
         path='/'
         element={<HomePage />}
       />
-      <Route
-        path='/blog'
-        element={<BlogPage />}
+      <Route 
+        path='/recommendations'
+        element={<RecommendationPage />}
       />
       <Route
         path='/projects'
