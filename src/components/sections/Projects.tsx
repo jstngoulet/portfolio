@@ -92,7 +92,7 @@ export default function Projects(): JSX.Element {
           <p className='text-muted-dark dark:text-muted'>
             Results not found.{' '}
             <span onClick={removeselectedFilters}>
-              <InlineLink>Clear filters</InlineLink>
+              <InlineLink id='clear-filters'>Clear filters</InlineLink>
             </span>
           </p>
         </div>

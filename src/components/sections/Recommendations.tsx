@@ -34,7 +34,7 @@ export default function Recommendations(): JSX.Element {
             </Heading1>
             <p className='animate-fade-in !delay-200'>
                 Personal Recommendations from my peers and coworkers at current and prior organizations. 
-                These recommendattions are viewable on <InlineLink href='https://www.linkedin.com/in/jstngoulet/details/recommendations/'>
+                These recommendattions are viewable on <InlineLink href='https://www.linkedin.com/in/jstngoulet/details/recommendations/' id='linkedin-recommendations'>
                 LinkedIn
                 </InlineLink> via my profile.
             </p>
@@ -44,7 +44,7 @@ export default function Recommendations(): JSX.Element {
               className={clsx(
                 'animate-fade-in !delay-300',
                 'mx-auto mt-6 md:mt-8',
-                'grid justify-items-center gap-x-6 gap-y-8 sm:grid-cols-2 xl:grid-cols-3'
+                'grid justify-items-center gap-x-6 gap-y-8 sm:grid-cols-1 xl:grid-cols-2'
               )}
             >
               {recommendationsEntry}

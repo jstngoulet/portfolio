@@ -515,7 +515,7 @@ const projects: ProjectProps[] = [
     description: (
       <span>
         <p>
-          Using the <InlineLink href='http://beerhopper.me'>Beer Hopper</InlineLink> app I created, the purpose of this website was to 
+          Using the <InlineLink href='http://beerhopper.me' id='beer-hopper-website'>Beer Hopper</InlineLink> app I created, the purpose of this website was to 
           introduce a more social experience than what was currently being offered.
         </p>
         <p>
@@ -528,8 +528,8 @@ const projects: ProjectProps[] = [
         </p>
         <p>
           From project documentation, ERDs for the Database Implementation, wireframing and actual implementation, we spent countless 
-          hours ensuring we had the best project in the class. Using <InlineLink href='http://github.com/'>GitHub</InlineLink> 
-          as our version control system, our repository is publically viewable <InlineLink href='http://github.com/CSUSM-Web-Dev-F2016/f2016-Sem_Project'>here</InlineLink>.
+          hours ensuring we had the best project in the class. Using <InlineLink href='http://github.com/' id='personal-github'>GitHub</InlineLink> 
+          as our version control system, our repository is publically viewable <InlineLink href='http://github.com/CSUSM-Web-Dev-F2016/f2016-Sem_Project' id='beerhopper-csusm-project'>here</InlineLink>.
         </p>
       </span>
     ),
@@ -564,7 +564,7 @@ const projects: ProjectProps[] = [
           the computer was built from just above the transisitors to the operating system and the application that it runs.
         </p>
         <p>
-          The course was based off of an online course, found <InlineLink href='http://nand2tetris.org?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web'>
+          The course was based off of an online course, found <InlineLink href='http://nand2tetris.org?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&refr_medium=web' id='nand-2-tetris-site'>
           here</InlineLink> and consisted of week-long portions. For example, we had one week to create the codes for
            all of our elementary gates, a week for the advanced gates, a week for the ALU, and so on.
         </p>

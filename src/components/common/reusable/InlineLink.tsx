@@ -4,7 +4,8 @@ import InlineLinkProps from '@/types/components/InlineLinkProps'
 
 const SlidingInUnderline = lazy(() => import('@/components/common/reusable/SlidingInUnderline'))
 
-export default function InlineLink({ href, children }: InlineLinkProps): JSX.Element {
+export default function InlineLink({ href, children, id }: InlineLinkProps): JSX.Element {
+  
   return (
     <a
       href={href}
@@ -16,8 +17,14 @@ export default function InlineLink({ href, children }: InlineLinkProps): JSX.Ele
         'text-primary-dark hover:text-primary-lighter-dark',
         'dark:text-primary-light dark:hover:text-primary-lighter'
       )}
+      onClick={() => triggerAnalytic(id)}
     >
       <SlidingInUnderline>{children}</SlidingInUnderline>
     </a>
   )
+}
+
+function triggerAnalytic(eventId?: string) {
+  console.log(`Triggering id: ${eventId}`)
+  return;
 }
