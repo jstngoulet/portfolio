@@ -5,6 +5,28 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEmrkErX_nAcQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1693932867713?e=1744243200&v=beta&t=_qoMG0z2V_sZEtwmA4a3Ml4CYCjQjoa93qQaOlwNZtM`,
+    userName: `Jonathan Doster`,
+    userRole: `Sr. Software Engineer`,
+    userPosition: `I was senior to, interim manager.`,
+    reviewText: (
+      <span>
+        <p>
+          I was always very impressed working with Justin. He is a very diligent worker with a great
+          work ethic. He is very dependable- punctual, on time, available whenever you need him, and
+          he does what he says he’s going to do. Very trustworthy when it comes to delivery.
+        </p>
+        <p>
+          He also has a broad range of technical skills. Not only is he impressive develop
+          developing on mobile platforms, but he is also very competent working with data,
+          pipelines, databases, and back ends.
+        </p>
+      </span>
+    ),
+    dateGiven: `February 7, 2025`,
+    profileUrl: `https://www.linkedin.com/in/jbdoster?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BsImtBBwFRciw8RbI7hOvYw%3D%3D`
+  },
+  {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQESLwy9io3pfw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732122956839?e=1744243200&v=beta&t=6yjH_d55JgnpmmUxQ4FUeNMegLRMWE1VGi7hkrRvPtA`,
     userName: `Mohsen Masoudi`,
     userRole: `Android Developer`,
