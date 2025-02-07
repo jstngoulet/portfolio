@@ -2,7 +2,6 @@ import { lazy, useReducer } from 'react'
 import clsx from 'clsx'
 import RecommendationProps from '@/types/RecommendationProps'
 import LinkedinFillIcon from 'remixicon-react/LinkedinFillIcon'
-import { Avatar } from 'flowbite-react'
 
 const Heading3 = lazy(() => import('@/components/common/reusable/heading/Heading3'))
 const Card = lazy(() => import('@/components/common/reusable/Card'))

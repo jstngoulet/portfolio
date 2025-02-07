@@ -5,6 +5,36 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQESLwy9io3pfw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732122956839?e=1744243200&v=beta&t=6yjH_d55JgnpmmUxQ4FUeNMegLRMWE1VGi7hkrRvPtA`,
+    userName: `Mohsen Masoudi`,
+    userRole: `Android Developer`,
+    userPosition: `Reported to me`,
+    reviewText: (
+      <span>
+        <p>
+          I had the pleasure of working with Justin Goulet as my team lead, and I can confidently
+          say he is one of the best iOS developers I’ve ever met. Justin’s technical expertise is
+          unmatched—he’s a true pro who consistently delivers high-quality solutions and stays on
+          top of the latest developments in iOS. His ability to tackle complex problems with ease
+          sets him apart in the field.
+        </p>
+        <p>
+          Beyond his technical skills, Justin is an exceptional leader. He managed our team
+          flawlessly, fostering a positive and productive environment. His strong communication
+          skills made collaboration smooth and efficient, and he always made sure everyone felt
+          heard and supported. Justin’s leadership style not only kept us on track but also
+          motivated us to perform at our best.
+        </p>
+        <p>
+          If you’re looking for a highly skilled, reliable, and inspiring iOS developer and team
+          lead, Justin is at the top of the league. Any team would be lucky to have him!
+        </p>
+      </span>
+    ),
+    dateGiven: `February 7, 2025`,
+    profileUrl: `https://www.linkedin.com/in/mohsen-masoudi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BqsyzQdq5T2i0NNo%2B%2BVxahg%3D%3D`
+  },
+  {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQFJAcAq3cea6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710328511266?e=1744243200&v=beta&t=xs81z0iVXpRkGsntSGC0aISxyI6DJNx9KxWnOPH1Jls`,
     userName: `AJ Lee`,
     userRole: `Interim CEO @ Getaround`,

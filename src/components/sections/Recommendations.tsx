@@ -5,8 +5,6 @@ import clsx from 'clsx'
 import useFadeInMounted from '@/hooks/useFadeInMounted'
 import RecommendationProps from '@/types/RecommendationProps'
 
-
-
 const Heading1 = lazy(() => import('@/components/common/reusable/heading/Heading1'))
 const InlineLink = lazy(() => import('@/components/common/reusable/InlineLink'))
 const RecommendationCard = lazy(() => import('@/components/common/RecommendationCard'))
