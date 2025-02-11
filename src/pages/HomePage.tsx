@@ -12,7 +12,7 @@ export default function HomePage(): JSX.Element {
   return (
     <>
       <Helmet>
-        <title>Justin Goulet | Mobile Engineering Managerr</title>
+        <title>Justin Goulet | Mobile Engineering Manager</title>
         <meta
           name="description"
           content="Justin Goulet is a Mobile Software Engineer with 7+ years work experience building mobile apps for growing companies with a data driven mindset and capabilities for full project development lifecycles (requirements gathering, product design, data analysis and more)."

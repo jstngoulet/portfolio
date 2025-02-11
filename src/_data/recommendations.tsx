@@ -5,6 +5,55 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEoyUXV3WiA0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724298436941?e=1744848000&v=beta&t=G9DhM5vncUsaoSwhDgt9AhaqieeGh0IV_CWdyJgo2c4`,
+    userName: `Amit Gangwar`,
+    userRole: `VP Engineering`,
+    userPosition: `Managed me Directly`,
+    reviewText: (
+      <span>
+        <p>
+          I had the privilege of managing Justin directly at HyreCar and was consistently impressed
+          by his technical expertise and leadership. As Engineering Manager for the Driver Mobile
+          Applications team, Justin successfully led a cross-functional team of iOS, Android, Web,
+          and Backend engineers, delivering impactful features and collaborating with stakeholders
+          to develop innovative products. Justin's ability to combine technical skills with
+          strategic thinking makes him a standout professional. His leadership, collaborative
+          mindset, and focus on delivering value would make him an asset to any organization. I
+          wholeheartedly recommend him for roles where innovation and execution are paramount.
+        </p>
+      </span>
+    ),
+    dateGiven: `February 10, 2025`,
+    profileUrl: `https://www.linkedin.com/in/agangwar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BbqlSVT5xQOuFUNPOVsOd2g%3D%3D`
+  },
+  {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4D03AQFRNZ_9qLPUJw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516767933955?e=1744848000&v=beta&t=HdTY1NyP8adKrvrhsilnb2PUSG9FMYCgEyOgFDbukE0`,
+    userName: `Jennifer Northrup`,
+    userRole: `Sr. Software Engineer`,
+    userPosition: `I was senior to, didn't manage directly`,
+    reviewText: (
+      <span>
+        <p>
+          Justin is an experienced engineer with a keen eye for navigating blockers. His business
+          understanding and domain knowledge make him an asset to any company, particularly those
+          utilizing customized marketplaces, gig work, or in the financial/insurance space.
+          Technical understanding and a deep sense of ownership guarantee Justin's enthusiasm for
+          his work, and he consistently brings productive ideas to the table.
+        </p>
+        <p>
+          When we last worked together, he was resolute about implementing a particular payment
+          feature that consistently received pushback from other parties. Justin patiently but
+          consistently resurfaced it during roadmapping sessions for multiple quarters. When it was
+          finally implemented, we clearly saw considerable income, reduced liability, and fewer
+          agent hours spent with disgruntled customers. He truly cares about the success of the
+          business and has the know-how to make an impact on your team.
+        </p>
+      </span>
+    ),
+    dateGiven: `February 8, 2025`,
+    profileUrl: `https://www.linkedin.com/in/jennifer-northrup-7ba96117?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BbqlSVT5xQOuFUNPOVsOd2g%3D%3D`
+  },
+  {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEmrkErX_nAcQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1693932867713?e=1744243200&v=beta&t=_qoMG0z2V_sZEtwmA4a3Ml4CYCjQjoa93qQaOlwNZtM`,
     userName: `Jonathan Doster`,
     userRole: `Sr. Software Engineer`,
