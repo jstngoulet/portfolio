@@ -5,6 +5,41 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQGtvTMMefYpVw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1683653352372?e=1744848000&v=beta&t=Q8RNFHG_NkXNFG6L_4rZr284b83wxZ_N0pyJbNultjE`,
+    userName: `Nikita Urunkar`,
+    userRole: `Business Intelligence Manager`,
+    userPosition: `Worked with me on different team`,
+    reviewText: (
+      <span>
+        <p>
+          I had the pleasure of working with Justin for over two years during my time at HyreCar,
+          and he was an invaluable partner in driving key initiatives related to both drivers and
+          owners on the platform. As an engineering lead, Justin played a crucial role in the
+          technical implementation of various projects, ensuring seamless execution and data
+          tracking. His deep understanding of the business made him my go-to person whenever we
+          needed to identify critical events to track or integrate new data points into our systems.
+        </p>
+        <p>
+          One of the most impactful projects we collaborated on was the marketplace rankings
+          algorithm, where we aimed to optimize listing positions for cars on the platform. Justin
+          brought incredible insights into A/B testing, data tracking, and key variables to measure,
+          ensuring that our approach was both data-driven and technically sound. Beyond his
+          technical expertise, he has a unique ability to bridge the gap between engineering and
+          non-technical stakeholders, effectively communicating complex ideas to diverse teams.
+        </p>
+        <p>
+          Justin is hands-on, precise, and always reliable when it comes to problem-solving and
+          unblocking challenges. His expertise in iOS and Android development, combined with his
+          leadership and collaboration skills, makes him an outstanding engineer and technical
+          leader. I highly recommend Justin to any team looking for a dedicated and skilled
+          engineering manager who delivers both technical excellence and business impact.
+        </p>
+      </span>
+    ),
+    dateGiven: `February 13, 2025`,
+    profileUrl: `https://www.linkedin.com/in/nikita-urunkar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BR3%2F%2BIIugRSCG%2B0xEMtOzKQ%3D%3D`
+  },
+  {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQGfeWSQ8ABG-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695155816011?e=1744848000&v=beta&t=beoP0oXKeU-FDXxvGVSVVTxe8B5fifXFNq9rG8B5AY0`,
     userName: `Priya Gandhi`,
     userRole: `iOS Developer`,
@@ -43,8 +78,8 @@ export const recommendations: RecommendationProps[] = [
         </p>
       </span>
     ),
-    dateGiven: ``,
-    profileUrl: ``
+    dateGiven: `February 12, 2025`,
+    profileUrl: `https://www.linkedin.com/in/priya-gandhi-99078797?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BR3%2F%2BIIugRSCG%2B0xEMtOzKQ%3D%3D`
   },
   {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEoyUXV3WiA0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724298436941?e=1744848000&v=beta&t=G9DhM5vncUsaoSwhDgt9AhaqieeGh0IV_CWdyJgo2c4`,
