@@ -5,6 +5,48 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQGfeWSQ8ABG-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695155816011?e=1744848000&v=beta&t=beoP0oXKeU-FDXxvGVSVVTxe8B5fifXFNq9rG8B5AY0`,
+    userName: `Priya Gandhi`,
+    userRole: `iOS Developer`,
+    userPosition: `Reported to me`,
+    reviewText: (
+      <span>
+        <p>
+          I’ve had the privilege of working with Justin at HyreCar by GetAround as part of the iOS
+          development team, and I can honestly say he is one of the best leaders I’ve ever had.
+        </p>
+        <p>
+          His ability to create an environment where innovation thrives is unmatched. He is
+          extremely knowledgeable about iOS development, from mastering Swift to optimizing
+          performance, but what really sets him apart is his approach to empowering the team.
+          Whether we’re tackling challenging bugs or working on the latest app feature, Justin
+          always encourages creative thinking and pushes us to explore new solutions.
+        </p>
+        <p>
+          I specifically remember when I was working on the conversion of some UI components to
+          SwiftUI, and I encountered some roadblocks with performance optimization and UI/UX design.
+          Instead of just providing the answers, Justin helped me work through the problem by
+          guiding discussions and offering insights, which not only solved the issue but also helped
+          me grow as a developer. It was clear that his leadership was more about fostering
+          collaboration and helping everyone level up their skills.
+        </p>
+        <p>
+          On top of that, Justin genuinely cares about the team’s success and well-being. He takes
+          the time to offer feedback and mentorship, which has been invaluable in my own
+          professional growth. I’ve learned so much about iOS development under his leadership, and
+          I know I’ve become a better developer because of it.
+        </p>
+        <p>
+          If you’re looking for someone who combines deep technical expertise with a leadership
+          style that inspires, I highly recommend Justin. He is the kind of manager who not only
+          leads by example but also makes everyone around him better.
+        </p>
+      </span>
+    ),
+    dateGiven: ``,
+    profileUrl: ``
+  },
+  {
     userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEoyUXV3WiA0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724298436941?e=1744848000&v=beta&t=G9DhM5vncUsaoSwhDgt9AhaqieeGh0IV_CWdyJgo2c4`,
     userName: `Amit Gangwar`,
     userRole: `VP Engineering`,
