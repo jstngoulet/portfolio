@@ -1,24 +1,24 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import usePHP from 'vite-plugin-php'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(), 
+    usePHP({
+       binary: '/opt/lampp/bin/php-8.1.10', 
+       entry: ['php/*.php'] 
+      }
+    )
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
     }
   },
-  server: {
-    proxy: {
-      '/blog/rss': {
-        target: 'https://medium.com/@leejhlouis/feed',
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/blog\/rss/, '')
-      }
-    }
-  },
-  assetsInclude: ['**/*.md'],
+  server: {},
+  assetsInclude: ['**/*.md', '**/*.php'],
   define: { 'process.env': 'import.meta.env' }
 })

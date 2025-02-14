@@ -22,7 +22,8 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "remixicon-react": "^1.0.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "vite-plugin-php": "^1.0.71"
   },
   "devDependencies": {
     "@netlify/functions": "^2.7.0",
