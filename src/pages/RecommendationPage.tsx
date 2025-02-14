@@ -12,7 +12,7 @@ const PageWrapper = lazy(() => import('@/components/layouts/PageWrapper'))
 const Navbar = lazy(() => import('@/components/layouts/Navbar'))
 const Footer = lazy(() => import('@/components/layouts/Footer'))
 
-export default function RecommendationPage(recommendations: RecommendationProps[]): JSX.Element {
+export default function RecommendationPage(): JSX.Element {
 
   
 
