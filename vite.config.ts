@@ -8,7 +8,6 @@ export default defineConfig({
   plugins: [
     react(), 
     usePHP({
-       binary: '/opt/lampp/bin/php-8.1.10', 
        entry: ['php/*.php'] 
       }
     )
