@@ -12,7 +12,7 @@ export default function Router(): JSX.Element {
         path='/'
         element={<HomePage />}
       />
-      <Route 
+      <Route
         path='/recommendations'
         element={<RecommendationPage />}
       />
@@ -22,6 +22,10 @@ export default function Router(): JSX.Element {
       />
       <Route
         path='/about'
+        element={<AboutPage />}
+      />
+      <Route
+        path='/php/about.php'
         element={<AboutPage />}
       />
       <Route
