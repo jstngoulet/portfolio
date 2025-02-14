@@ -25,10 +25,6 @@ export default function Router(): JSX.Element {
         element={<AboutPage />}
       />
       <Route
-        path='/php/about*'
-        element={<AboutPage />}
-      />
-      <Route
         path='/*'
         element={<NotFoundPage />}
       />
