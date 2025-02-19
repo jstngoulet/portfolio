@@ -1,6 +1,7 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import { v4 as uuid } from 'uuid'
+import { ANALYTICS_SERVER_URL } from '@/config'
 
 interface AnalyticEvent {
   category: string
@@ -18,7 +19,7 @@ export function reportAnalytic(properties: AnalyticEvent) {
 
     axios
       .post(
-        'http://localhost:3000/analytics/new_event/',
+        `${ANALYTICS_SERVER_URL()}/analytics/new_event/`,
         {
           app_id: 'Portfolio-DEV',
           user_id: id,
@@ -70,7 +71,7 @@ async function getUserID(): Promise<string> {
   if (!userID) {
     try {
       const response = await axios.post(
-        'http://localhost:3000/auth/register',
+        `${ANALYTICS_SERVER_URL()}/auth/register`,
         {
           username: newID,
           password: newID

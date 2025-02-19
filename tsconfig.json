@@ -29,7 +29,7 @@
   "references": [{ "path": "./tsconfig.node.json" }],
   "include": [
     "src/", 
-    "environment.d.ts", 
+    "src/environment.d.ts", 
     "env"
   ]
 }
