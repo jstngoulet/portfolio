@@ -17,3 +17,11 @@ export const ANALYTICS_SERVER_URL = () => {
     
     return 'http://localhost:3000'
 }
+
+export const ANALYTICS_APP_ID = () => {
+    const foundENV = import.meta.env.VITE_ANALYTICS_APP_ID;
+
+    if (foundENV) return foundENV
+
+    return 'PORTFOLIO-UNKNOWN'
+}
