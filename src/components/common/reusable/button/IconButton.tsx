@@ -1,15 +1,21 @@
 import clsx from 'clsx'
 import ButtonProps from '@/types/components/buttons/ButtonProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent';
 
 export default function IconButton({
   onClick,
   className,
   screenReaderText,
-  icon
+  icon, 
+  name, 
+  location
 }: ButtonProps): JSX.Element {
   return (
     <button
-      onClick={onClick}
+      onClick={() => {
+        onClick;
+        reportButtonClick(name, location);
+      }}
       className={clsx(
         className,
         'rounded-xl p-2 backdrop-blur-sm backdrop-filter',

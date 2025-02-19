@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import clsx from 'clsx'
 import PrimaryButtonProps from '@/types/components/buttons/PrimaryButtonProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const SlidingInUnderline = lazy(() => import('@/components/common/reusable/SlidingInUnderline'))
 
@@ -10,7 +11,9 @@ export default function PrimaryButton({
   icon,
   children,
   inverted,
-  active
+  active, 
+  name, 
+  location
 }: PrimaryButtonProps): JSX.Element {
   return (
     <button
@@ -28,7 +31,10 @@ export default function PrimaryButton({
           'hover:text-primary-dark dark:hover:text-primary-light': !inverted && !active
         }
       )}
-      onClick={onClick}
+      onClick={ () => {
+        onClick;
+        reportButtonClick(name, location);
+      }}
     >
       {icon && <div className='pe-1'>{icon}</div>}
       {!active && <SlidingInUnderline type='secondary'>{children}</SlidingInUnderline>}

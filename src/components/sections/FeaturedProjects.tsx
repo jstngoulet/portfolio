@@ -31,7 +31,7 @@ export default function Projects(): JSX.Element {
         id='projects'
         className='scroll-mt-8'
       >
-        <Heading2 className='animate-fade-in pb-6 text-center text-primary-dark !delay-200 dark:text-white'>
+        <Heading2 id='featured-heading' className='animate-fade-in pb-6 text-center text-primary-dark !delay-200 dark:text-white'>
           Featured projects
         </Heading2>
         <div
@@ -46,9 +46,12 @@ export default function Projects(): JSX.Element {
         <div className='animate-fade-in !delay-500'>
           <NavLink to='/projects'>
             <PrimaryButton
+            id='view-projects'
               className='my-8'
               icon={<ArrowRightSLineIcon size={20} />}
               inverted
+              name='Featured Projects'
+              location='/projects'
             >
               More projects
             </PrimaryButton>

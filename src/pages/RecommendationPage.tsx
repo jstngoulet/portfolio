@@ -1,21 +1,19 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Preloader from '@/components/common/Preloader'
-import useFadeInMounted from '@/hooks/useFadeInMounted'
-import RecommendationProps from '@/types/RecommendationProps'
-import RecommendationCard from '@/components/common/RecommendationCard'
-import { JsxElement } from 'typescript'
-import BlogCard from '@/components/common/BlogCard'
 import Recommendations from '@/components/sections/Recommendations'
+import { reportPageLoad } from '@/API/Analytics/triggerEvent'
 
 const PageWrapper = lazy(() => import('@/components/layouts/PageWrapper'))
 const Navbar = lazy(() => import('@/components/layouts/Navbar'))
 const Footer = lazy(() => import('@/components/layouts/Footer'))
 
 export default function RecommendationPage(): JSX.Element {
-
   
-
+  useEffect((): void => {
+        reportPageLoad("Recommendations")
+  }, []);
+    
   return (
     <>
       <Helmet>
@@ -26,7 +24,7 @@ export default function RecommendationPage(): JSX.Element {
         />
       </Helmet>
       <Suspense fallback={<Preloader />}>
-        <PageWrapper>
+        <PageWrapper id='recommendation-page'>
           <Navbar />
           <Recommendations />
           <Footer />

@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import clsx from 'clsx'
 import InlineLinkProps from '@/types/components/InlineLinkProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const SlidingInUnderline = lazy(() => import('@/components/common/reusable/SlidingInUnderline'))
 
@@ -17,14 +18,11 @@ export default function InlineLink({ href, children, id }: InlineLinkProps): JSX
         'text-primary-dark hover:text-primary-lighter-dark',
         'dark:text-primary-light dark:hover:text-primary-lighter'
       )}
-      onClick={() => triggerAnalytic(id)}
+      onClick={() => {
+        reportButtonClick(id, href || '@');
+      }}
     >
       <SlidingInUnderline>{children}</SlidingInUnderline>
     </a>
   )
-}
-
-function triggerAnalytic(eventId?: string) {
-  console.log(`Triggering id: ${eventId}`)
-  return;
 }

@@ -15,6 +15,9 @@ export default function Footer(): JSX.Element {
   return (
     <footer className='container py-4 sm:py-6 xl:max-w-screen-xl xl:py-8'>
       <PrimaryButton
+      id='scroll-to-top'
+        name='Scroll to Top'
+        location='#'
         onClick={scrollToTop}
         className='mx-auto mb-6'
         icon={<ArrowUpSLineIcon />}
@@ -28,7 +31,7 @@ export default function Footer(): JSX.Element {
         <p className='pb-3 font-light sm:pb-0'>Used template from <InlineLink href="https://github.com/leejhlouis/louisite" id='template-origin'>Lousite</InlineLink></p>
         <div className='flex flex-col flex-wrap items-start gap-3 sm:flex-row sm:items-center sm:gap-0 sm:space-x-6'>
           <NavLinks />
-          <SocialMediaLinks />
+          <SocialMediaLinks id='social-links' />
         </div>
       </div>
     </footer>

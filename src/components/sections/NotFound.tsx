@@ -33,11 +33,12 @@ export default function HomePage(): JSX.Element {
         className='cursor-tracking-gradient'
       >
         <Section
+        id='not-found-section'
           className='flex h-screen flex-col justify-center md:items-center'
           maxWidthClass='md:max-w-screen-md'
         >
           {/* prettier-ignore */}
-          <Heading1 className={clsx(
+          <Heading1 id='hero-heading1' className={clsx(
             'animate-fade-in', 
             'text-primary-dark dark:text-white',
             'text-4xl md:text-center md:text-5xl'
@@ -57,9 +58,12 @@ export default function HomePage(): JSX.Element {
           </p>
           <NavLink to='/'>
             <PrimaryButton
+            id='return-home'
               icon={<ArrowLeftSLineIcon />}
               className='animate-bounce pl-1 md:mx-auto'
               inverted
+              name='Return Home'
+              location='/#'
             >
               Go home
             </PrimaryButton>

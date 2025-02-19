@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import about from '@/_data/about/about.md'
 import Preloader from '@/components/common/Preloader'
+import { reportPageLoad } from '@/API/Analytics/triggerEvent'
 
 const PageWrapper = lazy(() => import('@/components/layouts/PageWrapper'))
 const Navbar = lazy(() => import('@/components/layouts/Navbar'))
@@ -16,6 +17,7 @@ export default function AboutPage(): JSX.Element {
       .then((response: Response): Promise<string> => response.text())
       .then((text: string): void => {
         setContent(text)
+        reportPageLoad("About")
         localStorage.about = text
       })
       .catch((): void => setContent('Failed to load content. Please reload the page!'))

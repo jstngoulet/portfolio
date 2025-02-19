@@ -4,6 +4,7 @@ import Preloader from '@/components/common/Preloader'
 import ArticleProps from '@/types/ArticleProps'
 import calculateMinRead from '@/utils/calculateMinRead'
 import truncateText from '@/utils/truncateText'
+import { reportPageLoad } from '@/API/Analytics/triggerEvent'
 
 const PageWrapper = lazy(() => import('@/components/layouts/PageWrapper'))
 const Navbar = lazy(() => import('@/components/layouts/Navbar'))
@@ -11,6 +12,11 @@ const Blog = lazy(() => import('@/components/sections/Blog'))
 const Footer = lazy(() => import('@/components/layouts/Footer'))
 
 export default function BlogPage(): JSX.Element {
+  
+  useEffect((): void => {
+        reportPageLoad("Blog")
+  }, []);
+  
   const [articles, setArticles] = useState<ArticleProps[]>([])
 
   const getProperty = (item: Element, query: string): string =>
@@ -67,9 +73,9 @@ export default function BlogPage(): JSX.Element {
         />
       </Helmet>
       <Suspense fallback={<Preloader />}>
-        <PageWrapper>
+        <PageWrapper id='Blog Page'>
           <Navbar />
-          <Blog articles={articles} />
+          <Blog id='blog-section' articles={articles} />
           <Footer />
         </PageWrapper>
       </Suspense>

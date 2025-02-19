@@ -1,5 +1,5 @@
 export default interface ComponentProps {
-  id?: string
+  id: string
   className?: string
   children?: React.ReactNode
 }

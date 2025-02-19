@@ -2,7 +2,7 @@
   "name": "Justin Goulet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://louisite.netlify.app",
+  "homepage": "https://tizzle.dev",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,9 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "clsx": "^2.0.0",
     "dotenv": "^16.4.7",
     "firebase": "^11.2.0",
+    "js-cookie": "^3.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -27,11 +29,13 @@
   },
   "devDependencies": {
     "@netlify/functions": "^2.7.0",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^22.10.10",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@types/react-helmet": "^6.1.6",
     "@types/react-router-dom": "^5.3.3",
+    "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react": "^4.0.4",

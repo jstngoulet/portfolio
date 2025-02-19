@@ -1,6 +1,7 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import Preloader from '@/components/common/Preloader'
+import { reportPageLoad } from '@/API/Analytics/triggerEvent'
 
 const PageWrapper = lazy(() => import('@/components/layouts/PageWrapper'))
 const Navbar = lazy(() => import('@/components/layouts/Navbar'))
@@ -9,6 +10,11 @@ const FeaturedProjects = lazy(() => import('@/components/sections/FeaturedProjec
 const Footer = lazy(() => import('@/components/layouts/Footer'))
 
 export default function HomePage(): JSX.Element {
+  
+  useEffect((): void => {
+        reportPageLoad("Home")
+  }, []);
+  
   return (
     <>
       <Helmet>
@@ -19,7 +25,7 @@ export default function HomePage(): JSX.Element {
         />
       </Helmet>
       <Suspense fallback={<Preloader />}>
-        <PageWrapper>
+        <PageWrapper id='home-page'>
           <Navbar />
           <Hero />
           <FeaturedProjects />

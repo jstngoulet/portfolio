@@ -15,7 +15,8 @@ export default function Hero(): JSX.Element {
   const scrollToProjects = (): void => window.location.assign('#projects')
 
   return (
-    <Section
+    <Section 
+    id='hero-section'
       className={clsx(animationClass, 'flex h-[88vh] min-h-[480px] flex-col justify-between')}
     >
       <div className='flex h-3/4 flex-col justify-center space-y-4 sm:space-y-6'>
@@ -35,9 +36,9 @@ export default function Hero(): JSX.Element {
             'break-words font-extrabold tracking-tight'
           )}
         >
-          I specialize in building <HighlightText>iOS Applications</HighlightText> for{' '}
-          <HighlightText>growing companies</HighlightText> like{' '}
-          <HighlightText>yours</HighlightText>.
+          I specialize in building <HighlightText id='iOS-Apps'>iOS Applications</HighlightText> for{' '}
+          <HighlightText id='growing-companies'>growing companies</HighlightText> like{' '}
+          <HighlightText id='yours'>yours</HighlightText>.
         </h1>
         <p
           className={clsx(
@@ -49,12 +50,15 @@ export default function Hero(): JSX.Element {
         >
           Mobile Engineering Manager and Sr. iOS Developer at <InlineLink href='https://hyrecar.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&channel=web' id='getaround-referral'>HyreCar by Getaround</InlineLink>
         </p>
-        <SocialMediaLinks className={clsx('animate-fade-in !delay-500', 'mt-6')} />
+        <SocialMediaLinks id='social' className={clsx('animate-fade-in !delay-500', 'mt-6')} />
       </div>
       <PrimaryButton
         className='mx-auto animate-bounce'
         icon={<ArrowDownSLineIcon />}
         onClick={scrollToProjects}
+        name='Scroll to Projects'
+        location='#projects'
+        id='scroll-to-projects'
       >
         Featured projects
       </PrimaryButton>

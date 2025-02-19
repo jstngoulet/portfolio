@@ -1,10 +1,16 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import Preloader from '@/components/common/Preloader'
+import { reportPageLoad } from '@/API/Analytics/triggerEvent';
 
 const NotFound = lazy(() => import('@/components/sections/NotFound'))
 
 export default function NotFoundPage(): JSX.Element {
+  
+  useEffect((): void => {
+        reportPageLoad("Page Not Found")
+  }, []);
+  
   return (
     <>
       <Helmet>
