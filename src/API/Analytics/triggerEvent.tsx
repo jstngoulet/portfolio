@@ -1,6 +1,8 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import { v4 as uuid } from 'uuid'
+import qs from 'query-string'
+
 import { ANALYTICS_SERVER_URL, ANALYTICS_APP_ID } from '@/config'
 
 interface AnalyticEvent {
@@ -45,23 +47,27 @@ export function reportAnalytic(properties: AnalyticEvent) {
 }
 
 export function reportPageLoad(page: string, data?: Record<string, any>) {
+  const items = qs.parse(document.location.search)
   reportAnalytic({
     category: 'User Interaction',
     action: 'Page Viewed',
-    label: page, 
-    ...data
+    label: page,
+    data: {
+      ...data,
+      ...items
+    }
   })
 }
 
 export function reportButtonClick(id: string, ref: string) {
-    reportAnalytic({
-        category: "User Interaction",
-        action: "Button Clicked",
-        label: id,
-        data: {
-            location: ref
-        }
-    })
+  reportAnalytic({
+    category: 'User Interaction',
+    action: 'Button Clicked',
+    label: id,
+    data: {
+      location: ref
+    }
+  })
 }
 
 async function getUserID(): Promise<string> {
