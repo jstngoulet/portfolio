@@ -2,6 +2,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 import { v4 as uuid } from 'uuid'
 import qs from 'query-string'
+import { logEvent, analytics } from '@/plugins/firebase'
 
 import { ANALYTICS_SERVER_URL, ANALYTICS_APP_ID } from '@/config'
 
@@ -9,6 +10,7 @@ interface AnalyticEvent {
   category: string
   action: string
   label: string
+  id: string;
   data?: Record<string, any>
 }
 
@@ -21,9 +23,9 @@ export function reportAnalytic(properties: AnalyticEvent) {
 
     axios
       .post(
-        `${ANALYTICS_SERVER_URL()}/analytics/new_event/`,
+        `${ANALYTICS_SERVER_URL}/analytics/new_event/`,
         {
-          app_id: ANALYTICS_APP_ID(),
+          app_id: ANALYTICS_APP_ID,
           user_id: id,
           category: properties.category,
           action: properties.action,
@@ -37,12 +39,18 @@ export function reportAnalytic(properties: AnalyticEvent) {
           }
         }
       )
-      .then(function (response) {
-        console.log(response)
-      })
       .catch(function (error) {
         console.log(error)
       })
+      
+      //    Report to Firebase
+      logEvent(
+        analytics
+        , id
+        , {
+            ...properties.data
+        }
+      );
   })
 }
 
@@ -52,6 +60,7 @@ export function reportPageLoad(page: string, data?: Record<string, any>) {
     category: 'User Interaction',
     action: 'Page Viewed',
     label: page,
+    id: `viewed-${page}`,
     data: {
       ...data,
       ...items
@@ -64,6 +73,7 @@ export function reportButtonClick(id: string, ref: string) {
     category: 'User Interaction',
     action: 'Button Clicked',
     label: id,
+    id: `clicked-${id}`,
     data: {
       location: ref
     }
@@ -77,7 +87,7 @@ async function getUserID(): Promise<string> {
   if (!userID) {
     try {
       const response = await axios.post(
-        `${ANALYTICS_SERVER_URL()}/auth/register/`,
+        `${ANALYTICS_SERVER_URL}/auth/register/`,
         {
           username: newID,
           password: newID
