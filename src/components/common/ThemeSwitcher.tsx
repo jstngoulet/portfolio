@@ -20,6 +20,9 @@ export default function ThemeSwitcher(): JSX.Element {
       icon={isDark ? <MoonLineIcon size={20} /> : <SunLineIcon size={20} />}
       screenReaderText='Toggle theme'
       onClick={toggleDarkTheme}
+      name={`Switch Theme ${(localStorage.theme = isDark ? 'Light' : 'Dark')}`}
+      location={'#'}
+      id={`theme-switcher`}
     />
   )
 }

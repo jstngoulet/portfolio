@@ -19,6 +19,7 @@ export default function About({ children }: ComponentProps): JSX.Element {
       <Section
         className='[&>*]:animate-fade-in md:px-0 [&_p]:text-muted-dark [&_p]:dark:text-muted'
         maxWidthClass='md:max-w-screen-sm'
+        id='about-section'
       >
         <ReactMarkdown
           components={{
@@ -31,7 +32,7 @@ export default function About({ children }: ComponentProps): JSX.Element {
             ),
             li: ({ children }): JSX.Element => (
               <li>
-                <Badge>{children}</Badge>
+                <Badge id='produt-badge'>{children}</Badge>
               </li>
             )
           }}

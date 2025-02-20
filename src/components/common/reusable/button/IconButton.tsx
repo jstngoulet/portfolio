@@ -10,12 +10,18 @@ export default function IconButton({
   name, 
   location
 }: ButtonProps): JSX.Element {
+  
+  const handleClick = () => {
+    reportButtonClick(name, location)
+    
+    if (onClick) {
+      onClick();
+    }
+  };
+  
   return (
     <button
-      onClick={() => {
-        onClick;
-        reportButtonClick(name, location);
-      }}
+      onClick={handleClick}
       className={clsx(
         className,
         'rounded-xl p-2 backdrop-blur-sm backdrop-filter',

@@ -15,6 +15,15 @@ export default function PrimaryButton({
   name, 
   location
 }: PrimaryButtonProps): JSX.Element {
+  
+  const handleClick = () => {
+    reportButtonClick(name, location)
+
+    if (onClick) {
+      onClick()
+    }
+  }
+  
   return (
     <button
       className={clsx(
@@ -31,10 +40,7 @@ export default function PrimaryButton({
           'hover:text-primary-dark dark:hover:text-primary-light': !inverted && !active
         }
       )}
-      onClick={ () => {
-        onClick;
-        reportButtonClick(name, location);
-      }}
+      onClick={handleClick}
     >
       {icon && <div className='pe-1'>{icon}</div>}
       {!active && <SlidingInUnderline type='secondary'>{children}</SlidingInUnderline>}

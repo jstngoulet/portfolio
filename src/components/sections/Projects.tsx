@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { filters, projects } from '@/_data/projects'
 import useFadeInMounted from '@/hooks/useFadeInMounted'
 import ProjectProps from '@/types/components/ProjectProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const Badge = lazy(() => import('@/components/common/reusable/Badge'))
 const Heading1 = lazy(() => import('@/components/common/reusable/heading/Heading1'))
@@ -36,7 +37,6 @@ export default function Projects(): JSX.Element {
         if (project.otherTechStacks) {
           allTechStacks = [...allTechStacks, ...project.otherTechStacks]
         }
-        console.log(allTechStacks)
         return selectedFilters.every((filter: string) => allTechStacks.includes(filter))
       })
     }
@@ -53,10 +53,17 @@ export default function Projects(): JSX.Element {
 
   const filterEntry: JSX.Element[] = filters.map(filter => (
     <Badge
+      id='filter-badge'
       key={filter}
       className='animate-fade-in cursor-pointer !delay-200'
       active={selectedFilters.includes(filter)}
-      onClick={(): void => filterProjects(filter)}
+      onClick={() => {
+        filterProjects(filter);
+        reportButtonClick(
+          `Filter ${!selectedFilters.includes(filter) ? 'Activated' : 'Deactivated'}`,
+          filter
+        )
+      }}
     >
       {filter}
     </Badge>

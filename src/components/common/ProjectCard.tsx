@@ -2,6 +2,7 @@ import { lazy } from 'react'
 import clsx from 'clsx'
 import ProjectProps from '@/types/components/ProjectProps'
 import LinkProps from '@/types/LinkProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const Badge = lazy(() => import('@/components/common/reusable/Badge'))
 const Card = lazy(() => import('@/components/common/reusable/Card'))
@@ -16,11 +17,18 @@ export default function ProjectCard({
   const techStacksEntry = techStacks.map(
     (techStack: string, index: number): JSX.Element => (
       <Badge
+        id={techStack}
         key={index}
         className={clsx(
           'mr-2 last-of-type:mr-0',
           'text-base font-medium text-primary-dark dark:text-primary-light'
         )}
+        onClick={() => 
+          reportButtonClick(
+            'Project Tag',
+            techStack
+          )
+        }
       >
         {techStack}
       </Badge>
@@ -38,6 +46,12 @@ export default function ProjectCard({
           target='_blank'
           rel='noreferrer'
           aria-label={link.label}
+          onClick={() => {
+            reportButtonClick(
+              link.label, 
+              link.url || 'unknown-destination'
+            )
+          }}
         >
           {link.icon}
         </a>
@@ -46,9 +60,9 @@ export default function ProjectCard({
   )
 
   return (
-    <Card className='flex flex-col justify-between'>
+    <Card className='flex flex-col justify-between' id='project-card'>
       <header>
-        <Heading3>
+        <Heading3 id='project-name'>
           <a
             href={
               links.find(({ label }) => label === 'Source code')?.url ??
@@ -64,7 +78,7 @@ export default function ProjectCard({
             {title}
           </a>
         </Heading3>
-        <p className='text-muted-dark dark:text-muted'>{description}</p>
+        <span className='text-muted-dark dark:text-muted'>{description}</span>
       </header>
       <footer>
         <div className='mb-6 flex flex-wrap'>{techStacksEntry}</div>

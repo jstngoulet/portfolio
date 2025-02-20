@@ -3,6 +3,7 @@ import LinkedinFillIcon from 'remixicon-react/LinkedinFillIcon'
 import GithubFillIcon from 'remixicon-react/GithubFillIcon'
 import constants from '@/constants'
 import SocialProps from '@/types/SocialProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const social: SocialProps[] = [
   {
@@ -12,6 +13,9 @@ const social: SocialProps[] = [
       <MailFillIcon
         size={22}
         className='text-muted-dark dark:text-muted'
+        onClick={() => {
+          reportButtonClick('email-self', constants.social.mail)
+        }}
       />
     )
   },
@@ -22,6 +26,9 @@ const social: SocialProps[] = [
       <LinkedinFillIcon
         size={24}
         className='text-muted-dark dark:text-muted'
+        onClick={() => {
+          reportButtonClick('linkedin', constants.social.linkedin)
+        }}
       />
     )
   },
@@ -32,6 +39,9 @@ const social: SocialProps[] = [
       <GithubFillIcon
         size={24}
         className='text-muted-dark dark:text-muted'
+        onClick={() => {
+          reportButtonClick('github-profile', constants.social.github)
+        }}
       />
     )
   }

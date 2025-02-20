@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import socialList from '@/_data/social.tsx'
 import ComponentProps from '@/types/components/ComponentProps'
 import SocialProps from '@/types/SocialProps'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 export default function SocialMediaLinks({ className }: ComponentProps): JSX.Element {
   const social = socialList.map(
@@ -12,6 +13,12 @@ export default function SocialMediaLinks({ className }: ComponentProps): JSX.Ele
           target='_blank'
           rel='noreferrer'
           aria-label={item.name}
+          onClick={() => {
+            reportButtonClick(
+              item.name,
+              item.url || 'unknown-destination-social'
+            )
+          }}
         >
           {item.icon}
         </a>

@@ -10,7 +10,7 @@ interface AnalyticEvent {
   category: string
   action: string
   label: string
-  id: string;
+  id: string
   data?: Record<string, any>
 }
 
@@ -20,7 +20,7 @@ export function reportAnalytic(properties: AnalyticEvent) {
       console.log('User Not Authenticated')
       return
     }
-
+    
     axios
       .post(
         `${ANALYTICS_SERVER_URL}/analytics/new_event/`,
@@ -42,15 +42,11 @@ export function reportAnalytic(properties: AnalyticEvent) {
       .catch(function (error) {
         console.log(error)
       })
-      
-      //    Report to Firebase
-      logEvent(
-        analytics
-        , id
-        , {
-            ...properties.data
-        }
-      );
+
+    //    Report to Firebase
+    logEvent(analytics, id, {
+      ...properties.data
+    })
   })
 }
 
@@ -81,11 +77,14 @@ export function reportButtonClick(id: string, ref: string) {
 }
 
 async function getUserID(): Promise<string> {
-  let userID = Cookies.get('userID') || ''
+  let userID = Cookies.get('device_id') || ''
   const newID = uuid()
 
   if (!userID) {
     try {
+      //  Before we report hte event, make sure the user still exists
+
+      //  Now, report the event
       const response = await axios.post(
         `${ANALYTICS_SERVER_URL}/auth/register/`,
         {
@@ -103,7 +102,7 @@ async function getUserID(): Promise<string> {
       userID = response.data.id
 
       // Store userID in a cookie for future use
-      Cookies.set('userID', userID, { expires: 7, path: '/' })
+      Cookies.set('device_id', userID, { expires: 30, path: '/' })
     } catch (error) {
       console.error('Error fetching userID:', error)
       return ''

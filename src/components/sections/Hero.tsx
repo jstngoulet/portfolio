@@ -48,7 +48,7 @@ export default function Hero(): JSX.Element {
             'pb-0'
           )}
         >
-          Mobile Engineering Manager and Sr. iOS Developer at <InlineLink href='https://hyrecar.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&channel=web' id='getaround-referral'>HyreCar by Getaround</InlineLink>
+          Mobile Engineering Manager and Sr. iOS Developer at <InlineLink href='https://hyrecar.com?refr_source=justin.goulet+portfolio@aol.com&campaign=portfolio&utm_channel=web' id='getaround-referral'>HyreCar by Getaround</InlineLink>
         </p>
         <SocialMediaLinks id='social' className={clsx('animate-fade-in !delay-500', 'mt-6')} />
       </div>

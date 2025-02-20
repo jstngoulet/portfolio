@@ -1,6 +1,7 @@
 import { lazy, useState } from 'react'
 import clsx from 'clsx'
 import useEventListener from '@/hooks/useEventListener'
+import { reportButtonClick } from '@/API/Analytics/triggerEvent'
 
 const IconButton = lazy(() => import('@/components/common/reusable/button/IconButton'))
 const ArrowUpFillIcon = lazy(() => import('remixicon-react/ArrowUpFillIcon'))
@@ -25,6 +26,7 @@ export default function ScrollToTopFAB(): JSX.Element {
   return (
     <div className='fixed bottom-0 right-0 mb-8 mr-8'>
       <IconButton
+        id='scroll-to-top-FAB'
         className={clsx('duration-300', {
           'opacity-100': isButtonVisible,
           'opacity-0': !isButtonVisible
@@ -32,6 +34,8 @@ export default function ScrollToTopFAB(): JSX.Element {
         icon={<ArrowUpFillIcon size={24} />}
         screenReaderText='Scroll to top'
         onClick={scrollToTop}
+        name='Scroll to Top'
+        location='#'
       />
     </div>
   )

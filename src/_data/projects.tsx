@@ -44,6 +44,7 @@ const filters: string[] = [
 const projects: ProjectProps[] = [
   {
     slug: 'hyrecar',
+    id: 'hyrecar',
     featured: true,
     title: 'HyreCar by Getaround',
     description: (
@@ -111,6 +112,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "beer-hopper-2",
+    id: 'beer-hopper-2',
     featured: true,
     title: 'Beer Hopper',
     description: (
@@ -138,6 +140,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "other-mind",
+    id: 'other-mind',
     featured: false,
     title: 'Other Mind',
     description: (
@@ -181,6 +184,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "crowdsourz",
+    id: 'crowdsourz',
     featured: false,
     title: 'CrowdSorz',
     description: (
@@ -207,6 +211,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "bankroll",
+    id: 'bankroll',
     featured: true,
     title: 'BankRoll (now Guac)',
     description: (
@@ -245,6 +250,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "tending",
+    id: 'tending',
     featured: false,
     title: 'Tending',
     description: (
@@ -276,6 +282,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "yurparty",
+    id: 'yurparty',
     featured: false,
     title: 'YurParty',
     description: (
@@ -303,6 +310,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "referaway",
+    id: 'referaway',
     featured: false,
     title: 'Referaway',
     description: (
@@ -332,6 +340,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "beer-hopper-obj-c",
+    id: 'beer-hopper-obj-c',
     featured: false,
     title: 'Beer Hopper',
     description: (
@@ -362,6 +371,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "crony",
+    id: 'crony',
     featured: false,
     title: 'Crony',
     description: (
@@ -392,6 +402,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "krash-kourse",
+    id: 'krash-kourse',
     featured: true,
     title: 'Krash Kourse',
     description: (
@@ -420,6 +431,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "word-games",
+    id: 'word-games',
     featured: false,
     title: 'Word Games',
     description: (
@@ -449,6 +461,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "that-game",
+    id: 'that-game',
     featured: false,
     title: 'That Game',
     description: (
@@ -478,6 +491,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "portfolio",
+    id: 'portfolio',
     featured: true,
     title: 'Project Portfolio',
     description: (
@@ -509,7 +523,8 @@ const projects: ProjectProps[] = [
     ]
   },
   {
-    slug: "beer-hopper-web",
+    slug: "beer-hopper-web-legacy",
+    id: 'beer-hopper-web-legacy',
     featured: false,
     title: 'Beer Hopper (Web)',
     description: (
@@ -555,6 +570,7 @@ const projects: ProjectProps[] = [
   },
   {
     slug: "nand-2-tetris",
+    id: 'nand-2-tetris',
     featured: true,
     title: 'Nand2Tetris',
     description: (

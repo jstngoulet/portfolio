@@ -12,6 +12,7 @@ export default function InlineLink({ href, children, id }: InlineLinkProps): JSX
       href={href}
       target='_blank'
       rel='noreferrer'
+      id={id}
       className={clsx(
         'cursor-pointer',
         'font-semibold duration-300',
@@ -19,7 +20,7 @@ export default function InlineLink({ href, children, id }: InlineLinkProps): JSX
         'dark:text-primary-light dark:hover:text-primary-lighter'
       )}
       onClick={() => {
-        reportButtonClick(id, href || '@');
+        reportButtonClick(id || 'external-link', href || '#');
       }}
     >
       <SlidingInUnderline>{children}</SlidingInUnderline>
