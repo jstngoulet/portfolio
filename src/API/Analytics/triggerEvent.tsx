@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 import { v4 as uuid } from 'uuid'
 import qs from 'query-string'
-import { logEvent, analytics } from '@/plugins/firebase'
+import { logEvent, analytics, setUserId } from '@/plugins/firebase'
 
 import { ANALYTICS_SERVER_URL, ANALYTICS_APP_ID } from '@/config'
 
@@ -20,7 +20,7 @@ export function reportAnalytic(properties: AnalyticEvent) {
       console.log('User Not Authenticated')
       return
     }
-    
+
     axios
       .post(
         `${ANALYTICS_SERVER_URL}/analytics/new_event/`,
@@ -44,10 +44,15 @@ export function reportAnalytic(properties: AnalyticEvent) {
       })
 
     //    Report to Firebase
-    logEvent(analytics, id, {
-      ...properties.data
-    })
-  })
+    setUserId(analytics, id);
+    logEvent(
+      analytics,
+      `${properties.action}-${properties.label}`.replace(' ', '_').toUpperCase(),
+      {
+        ...properties.data
+      }
+    )
+  });
 }
 
 export function reportPageLoad(page: string, data?: Record<string, any>) {

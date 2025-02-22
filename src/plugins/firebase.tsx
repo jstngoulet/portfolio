@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics, logEvent } from "firebase/analytics";
+import { getAnalytics, logEvent, setUserId } from 'firebase/analytics'
 import  {
   GOOGLE_API_KEY
   , GOOGLE_APP_ID
@@ -26,4 +26,4 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 
 export const analytics = getAnalytics(app);
-export { logEvent }
+export { logEvent, setUserId }
