@@ -5,7 +5,7 @@ import RecommendationProps from '@/types/RecommendationProps'
 
 export const recommendations: RecommendationProps[] = [
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQFJAcAq3cea6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710328511266?e=1744243200&v=beta&t=xs81z0iVXpRkGsntSGC0aISxyI6DJNx9KxWnOPH1Jls`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQFJAcAq3cea6Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710328511266?e=1750896000&v=beta&t=-yI7cqs_eEtDfOVLbkgTXtTmAc2iwq0Czp_w5s63HVc`,
     userName: `AJ Lee`,
     userRole: `Interim CEO @ Getaround`,
     userPosition: `Senior to me, but didn't manage me directly`,
@@ -37,7 +37,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/asjlee?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3Bc2ub7zejQcqAAhzwj%2BlIvQ%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEoyUXV3WiA0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724298436941?e=1744848000&v=beta&t=G9DhM5vncUsaoSwhDgt9AhaqieeGh0IV_CWdyJgo2c4`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEoyUXV3WiA0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724298436941?e=1750896000&v=beta&t=BH95OY9WZ-ryj6vf3GUCGCeDYcJwt9BhMoxepClDSf4`,
     userName: `Amit Gangwar`,
     userRole: `VP Engineering`,
     userPosition: `Managed me Directly`,
@@ -59,7 +59,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/agangwar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BbqlSVT5xQOuFUNPOVsOd2g%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4E03AQHqq6yfgiIHIQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1539317025584?e=1744243200&v=beta&t=XWEv3U1hIGSlcJeX-f2G5tLjQmSnF8k3z6MAqOhFqq8`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4E03AQHqq6yfgiIHIQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1539317025584?e=1750896000&v=beta&t=moH-gK6dK9RLmls-5jCR4cBteNjxZmahURyp2kGi1Oo`,
     userName: `Bruce Larsen`,
     userRole: `Lead Architect`,
     userPosition: `Managed me directly`,
@@ -95,7 +95,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/brace-larsen-engineer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3Bc2ub7zejQcqAAhzwj%2BlIvQ%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQGtvTMMefYpVw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1683653352372?e=1744848000&v=beta&t=Q8RNFHG_NkXNFG6L_4rZr284b83wxZ_N0pyJbNultjE`,
+    userPhotoUrl: `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.rcmXeqCUOiCg54dfU4v9tgHaHa%26pid%3DApi&f=1&ipt=6e8ab046ba2a9b0e17fe064622e29e22a4cb3fa3aaa11ecc6567e7a4d1eb457b&ipo=images`,
     userName: `Nikita Urunkar`,
     userRole: `Business Intelligence Manager`,
     userPosition: `Worked with me on different team`,
@@ -130,7 +130,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/nikita-urunkar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BR3%2F%2BIIugRSCG%2B0xEMtOzKQ%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQGfeWSQ8ABG-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695155816011?e=1744848000&v=beta&t=beoP0oXKeU-FDXxvGVSVVTxe8B5fifXFNq9rG8B5AY0`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQGfeWSQ8ABG-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1695155816011?e=1750896000&v=beta&t=gXwChRtdgjb4AAnWnV9SdvJaSynvs0Tt9Y19EPIBxGc`,
     userName: `Priya Gandhi`,
     userRole: `iOS Developer`,
     userPosition: `Reported to me`,
@@ -172,7 +172,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/priya-gandhi-99078797?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BR3%2F%2BIIugRSCG%2B0xEMtOzKQ%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4D03AQFRNZ_9qLPUJw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516767933955?e=1744848000&v=beta&t=HdTY1NyP8adKrvrhsilnb2PUSG9FMYCgEyOgFDbukE0`,
+    userPhotoUrl: `hhttps://media.licdn.com/dms/image/v2/C4D03AQFRNZ_9qLPUJw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516767933955?e=1750896000&v=beta&t=svCyKKW2pskEC7KpuGoSl7NtKkwZ61xUaAMmZI1dojw`,
     userName: `Jennifer Northrup`,
     userRole: `Sr. Software Engineer`,
     userPosition: `I was senior to, didn't manage directly`,
@@ -199,7 +199,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/jennifer-northrup-7ba96117?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BbqlSVT5xQOuFUNPOVsOd2g%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEmrkErX_nAcQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1693932867713?e=1744243200&v=beta&t=_qoMG0z2V_sZEtwmA4a3Ml4CYCjQjoa93qQaOlwNZtM`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D5603AQEmrkErX_nAcQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1693932867713?e=1750896000&v=beta&t=buoEcqC3C06MzvR7EVngjDcc9QigmZTqQHdNmeC6_w0`,
     userName: `Jonathan Doster`,
     userRole: `Sr. Software Engineer`,
     userPosition: `I was senior to, interim manager.`,
@@ -221,7 +221,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/jbdoster?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BsImtBBwFRciw8RbI7hOvYw%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQESLwy9io3pfw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732122956839?e=1744243200&v=beta&t=6yjH_d55JgnpmmUxQ4FUeNMegLRMWE1VGi7hkrRvPtA`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/D4E03AQESLwy9io3pfw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732122956839?e=1750896000&v=beta&t=ulCPaB4brX8w3tyFaOoXlkj2ppdyVbrXDjIfNlIoiRE`,
     userName: `Mohsen Masoudi`,
     userRole: `Android Developer`,
     userPosition: `Reported to me`,
@@ -267,7 +267,7 @@ export const recommendations: RecommendationProps[] = [
     profileUrl: `https://www.linkedin.com/in/tanvir-sharif-b9b38949?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3Bc2ub7zejQcqAAhzwj%2BlIvQ%3D%3D`
   },
   {
-    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4E03AQEbiPdslTcv3Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1650859636738?e=1744243200&v=beta&t=a4g-feVOpCej4reLfB2Q504RPH3RLlakkMYpY99dhPA`,
+    userPhotoUrl: `https://media.licdn.com/dms/image/v2/C4E03AQEbiPdslTcv3Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1650859636738?e=1750896000&v=beta&t=1g_jLh91h5nw7qo1DFP0DrXJJKTRG5NEeaiXIGNz1no`,
     userName: `Raymond Abarca`,
     userRole: `Product Manager`,
     userPosition: `Worked on my team`,
@@ -306,7 +306,7 @@ export const recommendations: RecommendationProps[] = [
     ),
     dateGiven: `June 1, 2023`,
     profileUrl: `https://www.linkedin.com/in/raymond-abarca-b50824238?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3Bc2ub7zejQcqAAhzwj%2BlIvQ%3D%3D`
-  },
+  }
   //   {
   //     userPhotoUrl: ``,
   //     userName: ``,
