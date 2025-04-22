@@ -54,7 +54,7 @@ const projects: ProjectProps[] = [
           rent the vehicles of their peers in a simple to use marketplace.
         </p>
         <p>
-          I was brouht into HyreCar in 2018 with the task of building their iOS application from scratch and 
+          I was brought into HyreCar in 2018 with the task of building their iOS application from scratch and 
           scaling it to support all of their users. We were able to release it on schedule and with added
           features, starting the true shift of mobility for a mobility platform.
         </p>
